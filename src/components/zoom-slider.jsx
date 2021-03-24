@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-
 import p5 from "p5";
 
 class Sketch extends React.Component {
@@ -12,7 +11,6 @@ class Sketch extends React.Component {
     let canvas;
     let graphics;
     let angle = 0;
-    let grap;
     let img;
 
     function preLoad() {}
@@ -23,7 +21,7 @@ class Sketch extends React.Component {
         p.windowHeight / 1.58,
         p.WEBGL
       );
-      img = p.loadImage("scan.png");
+      img = p.loadImage("assets/scan.png");
     };
     p.draw = () => {
       p.background(0);
