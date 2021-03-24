@@ -7,14 +7,13 @@ const RightMain = () => {
   const [information, setInformation] = useContext(InformationContext);
   return (
     <>
-      <DisplayData id="bs-overide">
+      <DisplayData>
         {information.map((currentInfo, i) => (
           <>
-            <h1>
-              {currentInfo.title} {currentInfo.date}
-            </h1>
-
+            <h1>{currentInfo.title}</h1>
+            <h4>{currentInfo.date}</h4>
             <h4>{currentInfo.brief}</h4>
+
             {currentInfo.image ? (
               <img
                 src={process.env.PUBLIC_URL + currentInfo.image}
@@ -24,7 +23,8 @@ const RightMain = () => {
             ) : (
               <img src="" alt="" />
             )}
-            <p>{currentInfo.description}</p>
+            <h4>{currentInfo.description}</h4>
+            <p>{currentInfo.details}</p>
           </>
         ))}
       </DisplayData>

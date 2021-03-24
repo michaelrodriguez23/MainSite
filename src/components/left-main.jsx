@@ -22,17 +22,17 @@ const LeftMain = () => {
   const [information, setInformation] = useContext(InformationContext);
   const [links, setLinks] = useState([
     {
-      type: "Email",
+      type: "Email: [drescher.breckyn@gmail.com]",
       hyperLink: "drescher.breckyn@gmail.com ",
       isOver: false,
     },
     {
-      type: "Instagram",
+      type: "Instagram : [@breckynurheart]",
       hyperLink: "www.instagram.com/",
       isOver: false,
     },
     {
-      type: "Vimeo",
+      type: "Vimeo [https://vimeo.com/user27661615]",
       hyperLink: "www.vimeo.com/",
       isOver: false,
     },
@@ -65,6 +65,7 @@ const LeftMain = () => {
         brief: currentProj.brief,
         description: currentProj.description,
         image: currentProj.image,
+        details: currentProj.details,
         alt: currentProj.alt,
         video: "",
       },
@@ -179,6 +180,6 @@ color:white;
 
 `;
 const brief =
-  " (she/her/they) is from Arizona, and is of Puerto Rican and German descent. Based between New York City and Paris. ";
+  "(she/her/they) is from Arizona, and is of Puerto Rican and German descent. Based between New York City and Paris. Breckyn’s work aims to engage with audiences by asking questions that lead to more questions that ask us to deeply reflect on ourselves and our surroundings. She views live performance as interactive kinetic sculpture, a melding of the physical and fringe realms that can be used at its worst to shake us, and at its best to heal.";
 
 export default LeftMain;

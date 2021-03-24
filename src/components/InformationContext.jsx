@@ -11,6 +11,7 @@ export const InformationProvider = (props) => {
       date: "",
       brief: "",
       description: "",
+      details: "",
       image: "",
       video: "",
     },
