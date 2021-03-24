@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/brecklyn_portfolio/static/css/main.9bfa27ec.chunk.css",
+    "main.js": "/brecklyn_portfolio/static/js/main.0cbfc7bd.chunk.js",
+    "main.js.map": "/brecklyn_portfolio/static/js/main.0cbfc7bd.chunk.js.map",
+    "runtime-main.js": "/brecklyn_portfolio/static/js/runtime-main.2fea7802.js",
+    "runtime-main.js.map": "/brecklyn_portfolio/static/js/runtime-main.2fea7802.js.map",
+    "static/css/2.150d169a.chunk.css": "/brecklyn_portfolio/static/css/2.150d169a.chunk.css",
+    "static/js/2.8db28b93.chunk.js": "/brecklyn_portfolio/static/js/2.8db28b93.chunk.js",
+    "static/js/2.8db28b93.chunk.js.map": "/brecklyn_portfolio/static/js/2.8db28b93.chunk.js.map",
+    "static/js/3.a9375ff4.chunk.js": "/brecklyn_portfolio/static/js/3.a9375ff4.chunk.js",
+    "static/js/3.a9375ff4.chunk.js.map": "/brecklyn_portfolio/static/js/3.a9375ff4.chunk.js.map",
+    "index.html": "/brecklyn_portfolio/index.html",
+    "static/css/2.150d169a.chunk.css.map": "/brecklyn_portfolio/static/css/2.150d169a.chunk.css.map",
+    "static/css/main.9bfa27ec.chunk.css.map": "/brecklyn_portfolio/static/css/main.9bfa27ec.chunk.css.map",
+    "static/js/2.8db28b93.chunk.js.LICENSE.txt": "/brecklyn_portfolio/static/js/2.8db28b93.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/brecklyn_portfolio/static/media/font_anne.e20fd916.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2fea7802.js",
+    "static/css/2.150d169a.chunk.css",
+    "static/js/2.8db28b93.chunk.js",
+    "static/css/main.9bfa27ec.chunk.css",
+    "static/js/main.0cbfc7bd.chunk.js"
+  ]
+}
