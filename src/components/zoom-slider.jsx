@@ -10,11 +10,11 @@ class Sketch extends React.Component {
 
   Sketch = (p) => {
     let canvas;
-    let love;
     let graphics;
     let angle = 0;
+    let grap;
     let img;
-    let img2;
+
     function preLoad() {}
 
     p.setup = () => {
@@ -23,30 +23,18 @@ class Sketch extends React.Component {
         p.windowHeight / 1.58,
         p.WEBGL
       );
-      love = p.createGraphics(500, 500);
-      love.fill(255);
-      love.textSize(55);
-      love.text("LOVE", 150, 150);
-      img = p.loadImage("./scan.PNG");
-      img2 = p.loadImage("./scan3.PNG");
+      img = p.loadImage("scan.png");
     };
-
     p.draw = () => {
       p.background(0);
       let camX = p.map(p.mouseY, 0, p.width, -1000, 0);
       p.camera(camX, 0, p.height / p.tan(p.PI / 6), 0, 2, 0, 0, 0, 4);
-      // p.translate(0, 0, p.mouseY / 2);
       p.ambientLight(p.mouseY);
       p.directionalLight(255, 255, 255, 10, 1, 0);
-      p.texture(img2);
-      // if (p.floor(angle) % 2 == 0) {
-      //   p.texture(img);
-      // }
-      console.log(p.floor(angle));
+      p.texture(img);
       p.rotateX(angle / 10);
-      // p.rotateY(angle / 10);
       p.rotateZ(angle);
-      p.plane(1500, 1500, 200, 100);
+      p.plane(1500, 1500);
       angle += 0.008;
     };
   };

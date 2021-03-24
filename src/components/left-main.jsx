@@ -123,8 +123,7 @@ const LeftMain = () => {
               </ul>
             ) : null}
           </Lead>
-
-          <Sketch></Sketch>
+          <Sketch> </Sketch>
 
           <Lead></Lead>
         </Sidebar>
