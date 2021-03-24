@@ -21,7 +21,7 @@ class Sketch extends React.Component {
         p.windowHeight / 1.58,
         p.WEBGL
       );
-      img = p.loadImage("assets/scan.png");
+      img = p.loadImage("brecklyn_portfolio/assets/scan.png");
     };
     p.draw = () => {
       p.background(0);
