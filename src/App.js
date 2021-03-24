@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import LeftMain from "./components/left-main";
+import RightMain from "./components/right-main";
+import { ProjectProvider } from "./components/ProjectListContext";
+import { InformationProvider } from "./components/InformationContext";
+import { Container, Row, Col } from "react-bootstrap";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ProjectProvider>
+      <InformationProvider>
+        <Container fluid>
+          <Row>
+            <Col>
+              <LeftMain id="bs-overide" className="left-pane" />
+            </Col>
+            <Col>
+              <RightMain d="bs-overide"></RightMain>
+            </Col>
+          </Row>
+        </Container>
+      </InformationProvider>
+    </ProjectProvider>
   );
-}
+};
 
 export default App;

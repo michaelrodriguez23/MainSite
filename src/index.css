@@ -1,10 +1,42 @@
+
+@font-face {
+font-family: 'Anne';
+font-style: normal;
+src: local('font_anne.ttf'), url(assets/fonts/font_anne.ttf) format('truetype');
+}
+@font-face {
+font-family: 'Double';
+font-style: normal;
+src: local('Double.otf'), url(assets/fonts/Double.ttf) format('truetype');
+}
+
+@font-face {
+font-family: 'Mini';
+font-style: normal;
+src: local('Minipax-Regular.otf'), url(assets/fonts/Minipax-Regular.otf) format('opentype');
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: Roboto !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  background-color: black !important;
+
+}
+li {
+  font-size: 1em !important;
+  font-family: Work !important;
+list-style-type: square;
+text-align: left;
+}
+h1{
+  font-family: Vollkorn  !important;
+}
+p{
+  font-size: 1em !important;
+  font-family: Roboto !important;
 }
 
 code {
