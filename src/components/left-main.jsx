@@ -22,18 +22,18 @@ const LeftMain = () => {
   const [information, setInformation] = useContext(InformationContext);
   const [links, setLinks] = useState([
     {
-      type: "Email: [drescher.breckyn@gmail.com]",
-      hyperLink: "drescher.breckyn@gmail.com ",
+      type: "Email",
+      hyperLink: "mailto:drescher.breckyn@gmail.com",
       isOver: false,
     },
     {
-      type: "Instagram : [@breckynurheart]",
-      hyperLink: "www.instagram.com/",
+      type: "Instagram",
+      hyperLink: "https://www.instagram.com/breckynurheart",
       isOver: false,
     },
     {
-      type: "Vimeo [https://vimeo.com/user27661615]",
-      hyperLink: "www.vimeo.com/",
+      type: "Vimeo ",
+      hyperLink: "https://vimeo.com/user27661615",
       isOver: false,
     },
   ]);
@@ -73,7 +73,7 @@ const LeftMain = () => {
   }
 
   return (
-    <Container fluid>
+    <Container>
       <Wrapper>
         <Sidebar>
           <Lead
@@ -93,13 +93,14 @@ const LeftMain = () => {
             {showContact ? (
               <ul>
                 {links.map((link) => (
-                  <li
-                    onMouseOver={changeBackground}
-                    onMouseLeave={changeBackground2}
-                    onClick={(e) => openLink(e, link)}
-                  >
-                    {link.type}
-                  </li>
+                  <a href={link.hyperLink}>
+                    <li
+                      onMouseOver={changeBackground}
+                      onMouseLeave={changeBackground2}
+                    >
+                      {link.type}
+                    </li>
+                  </a>
                 ))}
               </ul>
             ) : null}
@@ -124,7 +125,8 @@ const LeftMain = () => {
               </ul>
             ) : null}
           </Lead>
-          <Sketch> </Sketch>
+
+          <Sketch></Sketch>
 
           <Lead></Lead>
         </Sidebar>
@@ -178,6 +180,6 @@ color:white;
 
 `;
 const brief =
-  "(she/her/they) is from Arizona, and is of Puerto Rican and German descent. Based between New York City and Paris.";
+  " (she/her/they) is from Arizona, and is of Puerto Rican and German descent. Based between New York City and Paris.";
 
 export default LeftMain;

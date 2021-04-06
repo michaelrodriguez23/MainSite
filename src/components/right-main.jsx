@@ -18,7 +18,7 @@ const RightMain = () => {
             {currentInfo.image ? (
               <img src={process.env.PUBLIC_URL + currentInfo.image} />
             ) : (
-              <h1>;)</h1>
+              <h1>{about}</h1>
             )}
             <Lead>
               <p>{currentInfo.description}</p>
@@ -73,3 +73,4 @@ background-color:black;
 
 color:white;
 `;
+const about = " [@breckynurheart]";

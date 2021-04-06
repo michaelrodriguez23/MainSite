@@ -48,5 +48,7 @@ img{
   height:50%;
   object-fit:cover;
   margin: auto;
-  padding:.1em;
+}
+a {
+color:white !important;
 }
