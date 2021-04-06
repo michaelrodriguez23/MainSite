@@ -139,18 +139,16 @@ min-height:100%;
 height:101vh;
 width:40vw;
 margin:0;
-padding:0% !important;
+padding:0%;
 border-right: .2em solid white;
-padding-left:0% ;
+
 `;
 const Sidebar = Styled.div`
-
 height:100vh;
 padding-right:35px;
 `;
 const ZoomSlider = Styled.div`
-min-height: 50%;
-min-width: 100%;
+
 box-sizing: border-box;
 margin:0;
 `;
@@ -158,12 +156,12 @@ margin:0;
 const Lead = Styled.h1`
 border-bottom: .2em solid white;
 margin:0;
-font-size:1.55em;
+font-size:1.5em;
 padding-top:2%;
 background-color:black;
 text-align: center;
 color:white;
-font
+
 `;
 const Work = Styled.div`
 margin:0;
@@ -173,13 +171,13 @@ text-align: right;
 color:white;
 `;
 const Brief = Styled.p`
-padding-left: 5%;
- padding-right:5%;
+font-size:3em;
+padding: .5em;
 text-align: center;
 color:white;
 
 `;
 const brief =
-  "(she/her/they) is from Arizona, and is of Puerto Rican and German descent. Based between New York City and Paris. Breckyn’s work aims to engage with audiences by asking questions that lead to more questions that ask us to deeply reflect on ourselves and our surroundings. She views live performance as interactive kinetic sculpture, a melding of the physical and fringe realms that can be used at its worst to shake us, and at its best to heal.";
+  "(she/her/they) is from Arizona, and is of Puerto Rican and German descent. Based between New York City and Paris.";
 
 export default LeftMain;

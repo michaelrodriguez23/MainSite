@@ -11,10 +11,10 @@ const App = () => {
         <Container fluid>
           <Row>
             <Col>
-              <LeftMain id="bs-overide" className="left-pane" />
+              <LeftMain className="left-pane" />
             </Col>
             <Col>
-              <RightMain d="bs-overide"></RightMain>
+              <RightMain />
             </Col>
           </Row>
         </Container>

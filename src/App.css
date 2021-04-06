@@ -20,3 +20,6 @@ background-color: black;
 .proj-details{
   color:black;
 };
+.container-fluid {
+   max-width:800px;
+}
