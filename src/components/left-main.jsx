@@ -137,20 +137,18 @@ const LeftMain = () => {
 
 const Wrapper = Styled.div`
 background-color:black;
+align-items:center;
 min-height:100%;
 height:101vh;
-width:40vw;
+padding-left:6em;
+padding-right:6em;
 margin:0;
-padding:0%;
-border-right: .2em solid white;
-
 `;
 const Sidebar = Styled.div`
 height:100vh;
-padding-right:35px;
 `;
 const ZoomSlider = Styled.div`
-
+padding:5em;
 box-sizing: border-box;
 margin:0;
 `;

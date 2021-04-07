@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import ReactPlayer from "react-player";
 import { ProjectListContext } from "./ProjectListContext";
 import { InformationContext } from "./InformationContext";
 import Styled from "styled-components";
@@ -18,7 +19,14 @@ const RightMain = () => {
             {currentInfo.image ? (
               <img src={process.env.PUBLIC_URL + currentInfo.image} />
             ) : (
-              <h1>{about}</h1>
+              <PlayerWrapper>
+                <ReactPlayer
+                  className="react-player"
+                  width="100%"
+                  height="100%"
+                  url="https://vimeo.com/520547158"
+                />
+              </PlayerWrapper>
             )}
             <Lead>
               <p>{currentInfo.description}</p>
@@ -37,20 +45,23 @@ export default RightMain;
 
 const DisplayData = Styled.div`
 text-align: left;
-padding:.8em;
 background: black;
-width:40vw;
+padding:2em;
 font-size:1em;
 height:101vh;
 margin:0;
 color:white;
 `;
+const PlayerWrapper = Styled.div`
+position: relative;
+padding-top: 56.25%
+`;
 
 const Lead = Styled.h1`
-text-align: left;
+text-align: center;
 margin:0;
 font-size:1em;
-padding:1em;
+padding-top:1em;
 background-color:black;
 border-bottom: .2em solid white;
 color:white;
@@ -68,9 +79,7 @@ const Credit = Styled.p`
 text-align: left;
 margin:0;
 font-size:1em;
-padding:1em;
+padding-top:1em;
 background-color:black;
-
 color:white;
 `;
-const about = " [@breckynurheart]";
