@@ -54,7 +54,7 @@ color:white;
 `;
 const PlayerWrapper = Styled.div`
 position: relative;
-padding-top: 56.25%
+
 `;
 
 const Lead = Styled.h1`

@@ -14,7 +14,9 @@ class Sketch extends React.Component {
     let img;
 
     function preLoad() {}
-
+    function windowResized() {
+      p.resizeCanvas(p.windowWidth / 2.59, p.windowHeight / 1.58, p.WEBGL);
+    }
     p.setup = () => {
       canvas = p.createCanvas(
         p.windowWidth / 2.59,
@@ -25,7 +27,9 @@ class Sketch extends React.Component {
         "https://michaelrodriguez23.github.io/brecklyn_portfolio/assets/scan.png"
       );
     };
+
     p.draw = () => {
+      windowResized();
       p.background(0);
       let camX = p.map(p.mouseY, 0, p.width, -1000, 0);
       p.camera(camX, 0, p.height / p.tan(p.PI / 6), 0, 2, 0, 0, 0, 4);
@@ -44,7 +48,7 @@ class Sketch extends React.Component {
   }
   render() {
     return (
-      <div ref={this.myRef}>
+      <div id="canvasWrapper" ref={this.myRef}>
         <h1 className="App-title"> {this.props.title} </h1>
       </div>
     );

@@ -138,7 +138,7 @@ const LeftMain = () => {
 const Wrapper = Styled.div`
 background-color:black;
 align-items:center;
-min-height:100%;
+
 height:101vh;
 padding-left:6em;
 padding-right:6em;
