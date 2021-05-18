@@ -5,7 +5,7 @@ export const ProjectListContext = createContext();
 export const ProjectProvider = (props) => {
   const [projects, setProjects] = useState([
     {
-      title: "Puffed",
+      title: "WhatIs",
       date: "[2020]",
       brief:
         "Dealing with the question: What is Instagram Art? Can it be manipulated to be Fine Art?",

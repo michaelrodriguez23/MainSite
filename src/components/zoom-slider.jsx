@@ -24,7 +24,7 @@ class Sketch extends React.Component {
         p.WEBGL
       );
       img = p.loadImage(
-        "https://michaelrodriguez23.github.io/brecklyn_portfolio/assets/scan.png"
+        "https://michaelrodriguez23.github.io/brecklyn_portfolio/assets/FastService.jpeg"
       );
     };
 

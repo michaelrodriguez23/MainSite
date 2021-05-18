@@ -22,18 +22,23 @@ const LeftMain = () => {
   const [information, setInformation] = useContext(InformationContext);
   const [links, setLinks] = useState([
     {
-      type: "Email",
-      hyperLink: "mailto:drescher.breckyn@gmail.com",
+      type: "email",
+      hyperLink: "mailto:vejigante@protonmail.com",
       isOver: false,
     },
     {
-      type: "Instagram",
-      hyperLink: "https://www.instagram.com/breckynurheart",
+      type: "blog",
+      hyperLink: "https://www.substack.com/",
       isOver: false,
     },
     {
-      type: "Vimeo ",
-      hyperLink: "https://vimeo.com/user27661615",
+      type: "are.na",
+      hyperLink: "https://www.are.na/miguelito/high-tech-low-life-adda3vjovvi",
+      isOver: false,
+    },
+    {
+      type: "github",
+      hyperLink: "https://github.com/michaelrodriguez23",
       isOver: false,
     },
   ]);
@@ -81,7 +86,7 @@ const LeftMain = () => {
             onMouseLeave={() => setShowBrief(true)}
             onMouseOver={changeBackground2}
           >
-            <h1>Brecklyn Davila Drescher</h1>
+            <h1>Michael Elijah</h1>
             <Brief>{showBrief ? <p>{brief}</p> : null}</Brief>
           </Lead>
 
@@ -89,7 +94,7 @@ const LeftMain = () => {
             onMouseEnter={() => setShowContact(true)}
             onMouseLeave={() => setShowContact(false)}
           >
-            <p>stay in touch </p>
+            <p>networks</p>
             {showContact ? (
               <ul>
                 {links.map((link) => (
@@ -110,7 +115,7 @@ const LeftMain = () => {
             onMouseEnter={() => setShowList(true)}
             onMouseLeave={() => setShowList(false)}
           >
-            <p> portfolio </p>
+            <p>works</p>
             {showList ? (
               <ul>
                 {projects.map((currentProj, i) => (
@@ -178,6 +183,6 @@ color:white;
 
 `;
 const brief =
-  " (she/her/they) is from Arizona, and is of Puerto Rican and German descent. Based between New York City and Paris.";
+  "【•】_【•】" ;
 
 export default LeftMain;

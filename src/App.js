@@ -1,6 +1,6 @@
 import LeftMain from "./components/left-main";
 import RightMain from "./components/right-main";
-import ResizeClass from "./components/resizeClass";
+// import ResizeClass from "./components/resizeClass";
 import { ProjectProvider } from "./components/ProjectListContext";
 import { InformationProvider } from "./components/InformationContext";
 import { Container, Row, Col } from "react-bootstrap";
@@ -10,7 +10,7 @@ const App = () => {
     <ProjectProvider>
       <InformationProvider>
         <Container fluid>
-          <ResizeClass>
+          {/* <ResizeClass> */}
             <Row>
               <Col>
                 <LeftMain />
@@ -19,7 +19,7 @@ const App = () => {
                 <RightMain />
               </Col>
             </Row>
-          </ResizeClass>
+          {/* </ResizeClass> */}
         </Container>
       </InformationProvider>
     </ProjectProvider>

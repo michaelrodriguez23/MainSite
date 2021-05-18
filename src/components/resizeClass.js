@@ -21,10 +21,10 @@ export default class ResizeClass extends Component {
   }
   render() {
     const isTablet = this.state.windowWidth < this.mediaQuery.tablet;
-    const testRender = isTablet ? "<p>Hi</p>" : <p>World</p>; //  👈🏽 2nd ternary right here
+    const testRender = isTablet ? "<p>Not Tablet</p>" : <p>Tablet</p>; //  👈🏽 2nd ternary right here
     return (
       <div>
-        <h1> Test </h1>
+    
         <div>
           <p>{testRender}</p>
         </div>
