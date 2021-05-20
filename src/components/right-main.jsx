@@ -16,6 +16,7 @@ const RightMain = () => {
             <Brief>
               <p>{currentInfo.brief}</p>
             </Brief>
+             {/*img src has to use env to display image urls outside of src folder */}
             {currentInfo.image ? (
               <img src={process.env.PUBLIC_URL + currentInfo.image} />
             ) : (

@@ -94,7 +94,7 @@ const LeftMain = () => {
             onMouseEnter={() => setShowContact(true)}
             onMouseLeave={() => setShowContact(false)}
           >
-            <p>networks</p>
+            <p>network 📡</p>
             {showContact ? (
               <ul>
                 {links.map((link) => (
@@ -115,7 +115,7 @@ const LeftMain = () => {
             onMouseEnter={() => setShowList(true)}
             onMouseLeave={() => setShowList(false)}
           >
-            <p>works</p>
+            <p>work 🔨</p>
             {showList ? (
               <ul>
                 {projects.map((currentProj, i) => (
