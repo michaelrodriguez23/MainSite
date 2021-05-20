@@ -36,10 +36,9 @@ class Sketch extends React.Component {
 
     p.draw = () => {
       windowResized();
+      p.noCursor();
       p.background(0);
-      p.texture()
-      p.rect(p.mouseX-450,p.mouseY-350,200);
-      p.fill(200,200,0)
+      p.image(cursor,p.mouseX-450,p.mouseY-350);
       let camX = p.map(p.mouseY, 0, p.width, -1000, 0);
       p.camera(camX, 0, p.height / p.tan(p.PI / 6), 0, 2, 0, 0, 0, 4);
       p.ambientLight(p.mouseY);
