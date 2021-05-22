@@ -27,8 +27,13 @@ const LeftMain = () => {
       isOver: false,
     },
     {
+      type: "github",
+      hyperLink: "https://github.com/michaelrodriguez23",
+      isOver: false,
+    },
+    {
       type: "blog",
-      hyperLink: "https://www.substack.com/",
+      hyperLink: "https://galaxybrain.blot.im/",
       isOver: false,
     },
     {
@@ -36,11 +41,7 @@ const LeftMain = () => {
       hyperLink: "https://www.are.na/miguelito/high-tech-low-life-adda3vjovvi",
       isOver: false,
     },
-    {
-      type: "github",
-      hyperLink: "https://github.com/michaelrodriguez23",
-      isOver: false,
-    },
+   
   ]);
 
   const [showLink, setShowLink] = React.useState(true);
@@ -72,7 +73,7 @@ const LeftMain = () => {
         image: currentProj.image,
         details: currentProj.details,
         alt: currentProj.alt,
-        video: "",
+        video: currentProj.video,
       },
     ]);
   }
@@ -87,29 +88,11 @@ const LeftMain = () => {
             onMouseOver={changeBackground2}
           >
             <h1>Michael Elijah</h1>
-            <Brief>{showBrief ? <p>{brief}</p> : null}</Brief>
-          </Lead>
+            </Lead>
+            <Brief>{showBrief ?  null :  <p>{brief}</p>}</Brief>
+         
 
-          <Lead
-            onMouseEnter={() => setShowContact(true)}
-            onMouseLeave={() => setShowContact(false)}
-          >
-            <p>network 📡</p>
-            {showContact ? (
-              <ul>
-                {links.map((link) => (
-                  <a href={link.hyperLink}>
-                    <li
-                      onMouseOver={changeBackground}
-                      onMouseLeave={changeBackground2}
-                    >
-                      {link.type}
-                    </li>
-                  </a>
-                ))}
-              </ul>
-            ) : null}
-          </Lead>
+         
 
           <Lead
             onMouseEnter={() => setShowList(true)}
@@ -130,8 +113,27 @@ const LeftMain = () => {
               </ul>
             ) : null}
           </Lead>
-
-          <Sketch></Sketch>
+          <Lead
+            onMouseEnter={() => setShowContact(true)}
+            onMouseLeave={() => setShowContact(false)}
+          >
+            <p>network 📡</p>
+            {showContact ? (
+              <ul>
+                {links.map((link) => (
+                  <a href={link.hyperLink}>
+                    <li
+                      onMouseOver={changeBackground}
+                      onMouseLeave={changeBackground2}
+                    >
+                      {link.type}
+                    </li>
+                  </a>
+                ))}
+              </ul>
+            ) : null}
+          </Lead>
+          {/* <Sketch></Sketch> */}
 
           <Lead></Lead>
         </Sidebar>
@@ -139,27 +141,26 @@ const LeftMain = () => {
     </Container>
   );
 };
-
+// Variables
+const brief =
+  "Tinkerer of many things  " ; 
 const Wrapper = Styled.div`
 background-color:black;
 align-items:center;
-
 height:101vh;
-padding-left:6em;
-padding-right:6em;
+
 margin:0;
 `;
 const Sidebar = Styled.div`
 height:100vh;
+
 `;
 const ZoomSlider = Styled.div`
-padding:5em;
 box-sizing: border-box;
 margin:0;
 `;
 
 const Lead = Styled.h1`
-border-bottom: .2em solid white;
 margin:0;
 font-size:1.5em;
 padding-top:2%;
@@ -172,17 +173,16 @@ const Work = Styled.div`
 margin:0;
 font-size:1em;
 background-color:black;
-text-align: right;
+text-align: center;
 color:white;
 `;
 const Brief = Styled.p`
-font-size:3em;
+font-size:1em;
 padding: .5em;
-text-align: center;
+text-align:center;
 color:white;
 
 `;
-const brief =
-  "【•】_【•】" ;
+
 
 export default LeftMain;

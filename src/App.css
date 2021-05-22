@@ -20,3 +20,8 @@ background-color: black;
 .proj-details{
   color:black;
 };
+.react-player {
+  position: relative;
+ padding-top: 56.25% ;
+ border-right: green solid 1em;
+};

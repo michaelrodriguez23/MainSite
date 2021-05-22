@@ -20,8 +20,7 @@ class Sketch extends React.Component {
     p.setup = () => {
       canvas = p.createCanvas(
         p.windowWidth / 2.59,
-        p.windowHeight / 1.58,
-        p.WEBGL
+        p.windowHeight / 1.58
       );
       img = p.loadImage(
         "https://michaelrodriguez23.github.io/brecklyn_portfolio/assets/FastService.jpeg"
@@ -33,25 +32,18 @@ class Sketch extends React.Component {
 
       
     };
+    function cursorDraw(){
+      p.noCursor();
+      p.image(cursor,p.mouseX,p.mouseY,100,100);
+    }
 
     p.draw = () => {
       windowResized();
-      p.noCursor();
       p.background(0);
-      p.image(cursor,p.mouseX-450,p.mouseY-350);
-      let camX = p.map(p.mouseY, 0, p.width, -1000, 0);
-      p.camera(camX, 0, p.height / p.tan(p.PI / 6), 0, 2, 0, 0, 0, 4);
-      p.ambientLight(p.mouseY);
-      p.directionalLight(255, 255, 255, 10, 1, 0);
-      p.texture(img);
-     p.rotateX(angle);
-     p.rotateZ(angle);
-     p.box(500, 500);
-    angle += 0.008;
+      cursorDraw();
+   
      };
-    function cursorDraw(){
     
-    }
   };
 
   componentDidMount() {

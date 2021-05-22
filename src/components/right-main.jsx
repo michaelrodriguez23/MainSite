@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import ReactPlayer from "react-player";
 import { ProjectListContext } from "./ProjectListContext";
 import { InformationContext } from "./InformationContext";
+import Sketch from "./zoom-slider";
 import Styled from "styled-components";
 const RightMain = () => {
   const [projects, setProjects] = useContext(ProjectListContext);
@@ -13,28 +14,31 @@ const RightMain = () => {
           <>
             <h1>{currentInfo.title}</h1>
             <h4>{currentInfo.date}</h4>
+           
             <Brief>
               <p>{currentInfo.brief}</p>
             </Brief>
-             {/*img src has to use env to display image urls outside of src folder */}
+           
+             {/*img src has to use env to display image urls outside of src folder *
+             if project hasn't been selected then the currentInfo.image should be empty. 
+             Therefore the ternary should populate an empty screen.*/}
             {currentInfo.image ? (
-              <img src={process.env.PUBLIC_URL + currentInfo.image} />
-            ) : (
-              <PlayerWrapper>
-                <ReactPlayer
-                  className="react-player"
-                  width="100%"
-                  height="100%"
-                  url="https://vimeo.com/520547158"
-                />
-              </PlayerWrapper>
+             <img src={process.env.PUBLIC_URL + currentInfo.image} /> 
+          
+              ) : (
+               null
+                
             )}
+         
+              <Credit>
+     
+     <a href={currentInfo.details}>{currentInfo.details} </a>
+   </Credit>
             <Lead>
+        
               <p>{currentInfo.description}</p>
             </Lead>
-            <Credit>
-              <p>{currentInfo.details}</p>
-            </Credit>
+        
           </>
         ))}
       </DisplayData>
@@ -45,42 +49,41 @@ const RightMain = () => {
 export default RightMain;
 
 const DisplayData = Styled.div`
-text-align: left;
+text-align: center;
+padding:1em;
 background: black;
-padding:2em;
 font-size:1em;
 height:101vh;
 margin:0;
 color:white;
 `;
 const PlayerWrapper = Styled.div`
-position: relative;
+position: relative; 
+padding-top: 56.25%;
 
 `;
 
 const Lead = Styled.h1`
 text-align: center;
 margin:0;
-font-size:1em;
+font-size:1.5em;
 padding-top:1em;
 background-color:black;
-border-bottom: .2em solid white;
 color:white;
 `;
 const Brief = Styled.p`
-border-top: .2em solid white;
+
 padding-top:.5em;
-text-align: left;
+text-align: center;
 margin:0;
 font-size:1.3em !important;
 background-color:black;
 color:white;
 `;
-const Credit = Styled.p`
-text-align: left;
-margin:0;
+const Credit = Styled.a`
+text-align: right;
 font-size:1em;
-padding-top:1em;
+padding:0em;
 background-color:black;
 color:white;
 `;
