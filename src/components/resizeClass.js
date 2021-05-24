@@ -22,7 +22,7 @@ export default class ResizeClass extends Component {
     });
   }
   render() {
-    const isTablet = this.state.windowWidth < this.mediaQuery.phone;
+    const isTablet = this.state.windowWidth < this.mediaQuery.tablet;
     const testRender = isTablet ?<Mobile></Mobile>: <Desktop> </Desktop>; //  👈🏽 2nd ternary right here
     return (
       <div>

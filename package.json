@@ -21,7 +21,7 @@
     "web-vitals": "^1.0.1",
     "zustand": "^3.3.2"
   },
-  "homepage": "https://michaelrodriguez23.github.io/MainSite",
+  "homepage": "https://michael-elijah.com",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
