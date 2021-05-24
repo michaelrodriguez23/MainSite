@@ -1,5 +1,5 @@
 {
-  "name": "breck_portfolio",
+  "name": "Main_Site",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -21,7 +21,7 @@
     "web-vitals": "^1.0.1",
     "zustand": "^3.3.2"
   },
-  "homepage": "https://michaelrodriguez23.github.io/brecklyn_portfolio",
+  "homepage": "https://michaelrodriguez23.github.io/MainSite",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
@@ -53,12 +53,12 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/michaelrodriguez23/brecklyn_portfolio.git"
+    "url": "git+https://github.com/michaelrodriguez23/MainSite.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/michaelrodriguez23/brecklyn_portfolio/issues"
+    "url": "https://github.com/michaelrodriguez23/MainSite/issues"
   }
 }
