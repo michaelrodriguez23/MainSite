@@ -87,6 +87,7 @@ const LeftMain = () => {
           <Lead
             onMouseEnter={() => setShowBrief(true)}
             onMouseLeave={() => setShowBrief(true)}
+            onClick={() => setShowBrief(true)}
             onMouseOver={changeBackground2}
           >
             <h1>Michael Elijah</h1>
@@ -98,6 +99,7 @@ const LeftMain = () => {
 
           <Lead
             onMouseEnter={() => setShowList(true)}
+            onClick={() => setShowList(true)}
             onMouseLeave={() => setShowList(false)}
           >
             <p>work 🔨</p>
@@ -117,6 +119,7 @@ const LeftMain = () => {
           </Lead>
           <Lead
             onMouseEnter={() => setShowContact(true)}
+            onClick={() => setShowContact(true)}
             onMouseLeave={() => setShowContact(false)}
           >
             <p>network 📡</p>
