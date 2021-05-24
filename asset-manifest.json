@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/brecklyn_portfolio/static/css/main.c62d2b59.chunk.css",
-    "main.js": "/brecklyn_portfolio/static/js/main.153c8efe.chunk.js",
-    "main.js.map": "/brecklyn_portfolio/static/js/main.153c8efe.chunk.js.map",
+    "main.js": "/brecklyn_portfolio/static/js/main.98ead8ec.chunk.js",
+    "main.js.map": "/brecklyn_portfolio/static/js/main.98ead8ec.chunk.js.map",
     "runtime-main.js": "/brecklyn_portfolio/static/js/runtime-main.735dc39a.js",
     "runtime-main.js.map": "/brecklyn_portfolio/static/js/runtime-main.735dc39a.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/brecklyn_portfolio/static/css/2.4c97ca4f.chunk.css",
@@ -21,6 +21,6 @@
     "static/css/2.4c97ca4f.chunk.css",
     "static/js/2.7158f9d9.chunk.js",
     "static/css/main.c62d2b59.chunk.css",
-    "static/js/main.153c8efe.chunk.js"
+    "static/js/main.98ead8ec.chunk.js"
   ]
 }
