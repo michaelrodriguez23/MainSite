@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-
+import App from "../App"
+import  Mobile from "./mobile";
+import  Desktop from "./desktop";
 export default class ResizeClass extends Component {
   constructor() {
     super();
@@ -20,8 +22,8 @@ export default class ResizeClass extends Component {
     });
   }
   render() {
-    const isTablet = this.state.windowWidth < this.mediaQuery.tablet;
-    const testRender = isTablet ? "<p>Not Tablet</p>" : <p>Tablet</p>; //  👈🏽 2nd ternary right here
+    const isTablet = this.state.windowWidth < this.mediaQuery.phone;
+    const testRender = isTablet ?<Mobile></Mobile>: <Desktop> </Desktop>; //  👈🏽 2nd ternary right here
     return (
       <div>
     

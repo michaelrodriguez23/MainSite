@@ -56,12 +56,19 @@ font-size:1em;
 height:101vh;
 margin:0;
 color:white;
+@media (max-width: 768px) { 
+  text-align: center;
+padding:1em;
+background: black;
+font-size:.6em;
+padding:2em;
+height:50vh;
+width:90vw;
+margin:0;
+color:white;
+ }
 `;
-const PlayerWrapper = Styled.div`
-position: relative; 
-padding-top: 56.25%;
 
-`;
 
 const Lead = Styled.h1`
 text-align: center;

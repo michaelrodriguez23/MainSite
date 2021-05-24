@@ -47,6 +47,14 @@ p{
   font-size: 1em !important;
   font-family: Roboto !important;
 }
+img {
+  max-width: 100%;
+  object-fit:cover;
+  @media max-width 768 {
+    object-fit:none;
+    
+  }
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -63,8 +71,8 @@ a {
 color:white !important;
 }
 .container {
-border-right: .1em dotted white;
-margin:0;
+
+
 }
 .react-player {
   position: absolute;

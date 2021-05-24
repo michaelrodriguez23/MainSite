@@ -1,11 +1,12 @@
-import LeftMain from "./components/left-main";
-import RightMain from "./components/right-main"; import ResizeClass from "./components/resizeClass";
-import { ProjectProvider } from "./components/ProjectListContext";
-import { InformationProvider } from "./components/InformationContext";
+import LeftMain from "./left-main";
+import RightMain from "./right-main";
+ import ResizeClass from "./resizeClass";
+import { ProjectProvider } from "./ProjectListContext";
+import { InformationProvider } from "./InformationContext";
 import { Container, Row, Col } from "react-bootstrap";
 
 
-const App = () => {
+const Desktop = () => {
 
 
 
@@ -15,7 +16,7 @@ const App = () => {
     <ProjectProvider>
       <InformationProvider>
         <Container fluid>
-           <ResizeClass> 
+      
             <Row>
               <Col>
                 <LeftMain />
@@ -24,7 +25,7 @@ const App = () => {
                 <RightMain />
               </Col>
             </Row>
-           </ResizeClass> 
+           
         </Container>
       </InformationProvider>
     </ProjectProvider>
@@ -32,4 +33,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Desktop;

@@ -19,7 +19,7 @@ function changeBackground2(e) {
   e.target.style.color = "white";
 }
 
-const LeftMain = () => {
+const Mobile = () => {
   const [projects, setProjects] = useContext(ProjectListContext);
   const [information, setInformation] = useContext(InformationContext);
   const [links, setLinks] = useState([
@@ -135,8 +135,7 @@ const LeftMain = () => {
               </ul>
             ) : null}
           </Lead>
-          {/* <Sketch></Sketch> Lets try applying media query for the right component to load here instead of right side */}
-
+           <RightMain></RightMain>
           <Lead></Lead>
         </Sidebar>
       </Wrapper>
@@ -164,7 +163,7 @@ margin:0;
 
 const Lead = Styled.h1`
 margin:0;
-font-size:1.5em;
+font-size:1em;
 padding-top:2%;
 background-color:black;
 text-align: center;
@@ -173,13 +172,13 @@ color:white;
 `;
 const Work = Styled.div`
 margin:0;
-font-size:1em;
+font-size:.5em;
 background-color:black;
 text-align: center;
 color:white;
 `;
 const Brief = Styled.p`
-font-size:1em;
+font-size:.5em;
 padding: .5em;
 text-align:center;
 color:white;
@@ -187,4 +186,4 @@ color:white;
 `;
 
 
-export default LeftMain;
+export default Mobile;
