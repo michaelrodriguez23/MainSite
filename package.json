@@ -1,5 +1,5 @@
 {
-  "name": "Main_Site",
+  "name": "MainSite",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -21,7 +21,7 @@
     "web-vitals": "^1.0.1",
     "zustand": "^3.3.2"
   },
-  "homepage": "https://michael-elijah.com",
+  "homepage": "https://michael-elijah.com/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
