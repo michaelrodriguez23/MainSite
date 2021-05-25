@@ -1,6 +1,6 @@
 import React, { useState, useContext, Linking } from "react";
 import Styled from "styled-components";
-import RightMain from "./right-main"; 
+import RightMain from "./right-main";
 import ResizeClass from "./resizeClass";
 import { ProjectListContext } from "./ProjectListContext";
 import { InformationContext } from "./InformationContext";
@@ -43,11 +43,10 @@ const LeftMain = () => {
       hyperLink: "https://www.are.na/miguelito/high-tech-low-life-adda3vjovvi",
       isOver: false,
     },
-   
   ]);
 
   const [showLink, setShowLink] = React.useState(true);
-  const [showBrief, setShowBrief] = React.useState(true);
+  const [showBrief, setShowBrief] = React.useState(false);
   const [showList, setShowList] = React.useState(false);
   const [showContact, setShowContact] = React.useState(false);
   const [showProject, setShowProject] = React.useState(false);
@@ -85,21 +84,17 @@ const LeftMain = () => {
       <Wrapper>
         <Sidebar>
           <Lead
-            onMouseEnter={() => setShowBrief(true)}
-            onMouseLeave={() => setShowBrief(true)}
-            onClick={() => setShowBrief(true)}
+            onMouseEnter={() => setShowBrief(!showBrief)}
+            onClick={() => setShowBrief(!showBrief)}
             onMouseOver={changeBackground2}
           >
             <h1>Michael Elijah</h1>
-            </Lead>
-            <Brief>{showBrief ?  null :  <p>{brief}</p>}</Brief>
-         
-
-         
+          </Lead>
+          <Brief>{showBrief ? <p> {brief} </p> : null}</Brief>
 
           <Lead
-            onMouseEnter={() => setShowList(true)}
-            onClick={() => setShowList(true)}
+            onMouseEnter={() => setShowList(!showList)}
+            onClick={() => setShowList(showList)}
             onMouseLeave={() => setShowList(false)}
           >
             <p>work 🔨</p>
@@ -118,9 +113,9 @@ const LeftMain = () => {
             ) : null}
           </Lead>
           <Lead
-            onMouseEnter={() => setShowContact(true)}
-            onClick={() => setShowContact(true)}
-            onMouseLeave={() => setShowContact(false)}
+            onMouseEnter={() => setShowContact(!showContact)}
+            onClick={() => setShowContact(!showContact)}
+            onMouseLeave={() => setShowContact(!showContact)}
           >
             <p>network 📡</p>
             {showContact ? (
@@ -147,13 +142,12 @@ const LeftMain = () => {
   );
 };
 // Variables
-const brief =
-  "Tinkerer of many things  " ; 
+const brief = "NYC  [vejigante@protonmail.com]";
+
 const Wrapper = Styled.div`
 background-color:black;
 align-items:center;
 height:101vh;
-
 margin:0;
 `;
 const Sidebar = Styled.div`
@@ -186,8 +180,6 @@ font-size:1em;
 padding: .5em;
 text-align:center;
 color:white;
-
 `;
-
 
 export default LeftMain;

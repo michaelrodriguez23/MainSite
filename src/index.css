@@ -37,7 +37,7 @@ li {
 list-style-type: square;
 display: flow-root;
 text-align:left;
-padding:.1em;
+padding:.5em;
 
 }
 h1{
@@ -51,7 +51,7 @@ img {
   max-width: 100%;
   object-fit:cover;
   @media max-width 768 {
-    object-fit:none;
+    object-fit:cover;
     
   }
 }

@@ -1,6 +1,6 @@
 import React, { useState, useContext, Linking } from "react";
 import Styled from "styled-components";
-import RightMain from "./right-main"; 
+import RightMain from "./right-main";
 import ResizeClass from "./resizeClass";
 import { ProjectListContext } from "./ProjectListContext";
 import { InformationContext } from "./InformationContext";
@@ -43,7 +43,6 @@ const Mobile = () => {
       hyperLink: "https://www.are.na/miguelito/high-tech-low-life-adda3vjovvi",
       isOver: false,
     },
-   
   ]);
 
   const [showLink, setShowLink] = React.useState(true);
@@ -90,11 +89,8 @@ const Mobile = () => {
             onMouseOver={changeBackground2}
           >
             <h1>Michael Elijah</h1>
-            </Lead>
-            <Brief>{showBrief ?  null :  <p>{brief}</p>}</Brief>
-         
-
-         
+          </Lead>
+          <Brief>{showBrief ? null : <p>{brief}</p>}</Brief>
 
           <Lead
             onMouseEnter={() => setShowList(true)}
@@ -135,7 +131,7 @@ const Mobile = () => {
               </ul>
             ) : null}
           </Lead>
-           <RightMain></RightMain>
+          <RightMain></RightMain>
           <Lead></Lead>
         </Sidebar>
       </Wrapper>
@@ -143,8 +139,7 @@ const Mobile = () => {
   );
 };
 // Variables
-const brief =
-  "Tinkerer of many things  " ; 
+const brief = "Tinkerer of many things  ";
 const Wrapper = Styled.div`
 background-color:black;
 align-items:center;
@@ -184,6 +179,5 @@ text-align:center;
 color:white;
 
 `;
-
 
 export default Mobile;

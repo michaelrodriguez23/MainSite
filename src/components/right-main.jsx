@@ -14,31 +14,24 @@ const RightMain = () => {
           <>
             <h1>{currentInfo.title}</h1>
             <h4>{currentInfo.date}</h4>
-           
+
             <Brief>
               <p>{currentInfo.brief}</p>
             </Brief>
-           
-             {/*img src has to use env to display image urls outside of src folder *
+
+            {/*img src has to use env to display image urls outside of src folder *
              if project hasn't been selected then the currentInfo.image should be empty. 
              Therefore the ternary should populate an empty screen.*/}
             {currentInfo.image ? (
-             <img src={process.env.PUBLIC_URL + currentInfo.image} /> 
-          
-              ) : (
-               null
-                
-            )}
-         
-              <Credit>
-     
-     <a href={currentInfo.details}>{currentInfo.details} </a>
-   </Credit>
+              <img src={process.env.PUBLIC_URL + currentInfo.image} />
+            ) : null}
+
+            <Credit>
+              <a href={currentInfo.details}>{currentInfo.details} </a>
+            </Credit>
             <Lead>
-        
               <p>{currentInfo.description}</p>
             </Lead>
-        
           </>
         ))}
       </DisplayData>
@@ -60,7 +53,7 @@ color:white;
   text-align: center;
 padding:1em;
 background: black;
-font-size:.6em;
+font-size:.4em;
 padding:2em;
 height:50vh;
 width:90vw;
@@ -68,7 +61,6 @@ margin:0;
 color:white;
  }
 `;
-
 
 const Lead = Styled.h1`
 text-align: center;

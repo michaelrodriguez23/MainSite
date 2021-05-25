@@ -8,8 +8,8 @@ class Sketch extends React.Component {
 
   Sketch = (p) => {
     let canvas;
-    
-    let cursor; 
+
+    let cursor;
     let angle = 0;
     let img;
 
@@ -18,32 +18,24 @@ class Sketch extends React.Component {
       p.resizeCanvas(p.windowWidth / 2.59, p.windowHeight / 1.58, p.WEBGL);
     }
     p.setup = () => {
-      canvas = p.createCanvas(
-        p.windowWidth / 2.59,
-        p.windowHeight / 1.58
-      );
+      canvas = p.createCanvas(p.windowWidth / 2.59, p.windowHeight / 1.58);
       img = p.loadImage(
         "https://michaelrodriguez23.github.io/brecklyn_portfolio/assets/FastService.jpeg"
       );
       cursor = p.loadImage(
         "https://michaelrodriguez23.github.io/brecklyn_portfolio/assets/100.png"
       );
-
-
-      
     };
-    function cursorDraw(){
+    function cursorDraw() {
       p.noCursor();
-      p.image(cursor,p.mouseX,p.mouseY,100,100);
+      p.image(cursor, p.mouseX, p.mouseY, 100, 100);
     }
 
     p.draw = () => {
       windowResized();
       p.background(0);
       cursorDraw();
-   
-     };
-    
+    };
   };
 
   componentDidMount() {
