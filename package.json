@@ -21,9 +21,9 @@
     "web-vitals": "^1.0.1",
     "zustand": "^3.3.2"
   },
-  "homepage": "https://michael-elijah.com/",
+  "homepage": "https://michaelrodriguez23.github.io/MainSite/",
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "yarn buil",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
