@@ -1,9 +1,10 @@
 
 @font-face {
-font-family: 'Anne';
+font-family: 'Source';
 font-style: normal;
 src: local('font_anne.ttf'), url(assets/fonts/font_anne.ttf) format('truetype');
 }
+
 @font-face {
 font-family: 'Double';
 font-style: normal;
@@ -16,9 +17,11 @@ font-style: normal;
 src: local('Minipax-Regular.otf'), url(assets/fonts/Minipax-Regular.otf) format('opentype');
 }
 
+
+
 body {
   margin: 0;
-  font-family: Roboto !important;
+  font-family: SourceCode ;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
@@ -32,8 +35,8 @@ body {
 
 }
 li {
-  font-size: 1em !important;
-  font-family: Work !important;
+  font-size: 1em ;
+  font-family: Source Code Pro, monospace;
 list-style-type: square;
 display: flow-root;
 text-align:left;
@@ -41,11 +44,11 @@ padding:.5em;
 
 }
 h1{
-  font-family: Mini  !important;
+  font-family: Source Code Pro, monospace;
 }
 p{
-  font-size: 1em !important;
-  font-family: Roboto !important;
+  font-size: .8em ;
+  font-family: Source Code Pro, monospace ;
 }
 img {
   max-width: 100%;
@@ -68,10 +71,9 @@ img{
 }
 
 a {
-color:white !important;
+color:white ;
 }
 .container {
-
 
 }
 .react-player {
@@ -79,5 +81,4 @@ color:white !important;
 top:0;
 bottom:0;
 padding-bottom: 1em;
-
 };
