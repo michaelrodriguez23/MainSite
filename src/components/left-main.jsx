@@ -138,7 +138,7 @@ const LeftMain = () => {
               </ul>
             ) : null}
           </Lead>
-          {/* <Sketch></Sketch> Lets try applying media query for the right component to load here instead of right side */}
+      
 
           <Lead></Lead>
           <Sketch></Sketch>
@@ -182,7 +182,7 @@ text-align: center;
 color:white;
 `;
 const Brief = Styled.p`
-font-size:.5em;
+font-size:1em;
 padding: .5em;
 text-align:center;
 color:white;
