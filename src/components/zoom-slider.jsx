@@ -20,7 +20,7 @@ class Sketch extends React.Component {
     p.setup = () => {
       canvas = p.createCanvas(p.windowWidth / 2.59, p.windowHeight / 1.58);
       img = p.loadImage(
-        "https://michaelrodriguez23.github.io/MainSite/assets/selfie.jpeg"
+        "https://michaelrodriguez23.github.io/MainSite/assets/selfie.jpg"
       );
       cursor = p.loadImage(
         "https://michaelrodriguez23.github.io/MainSite/assets/100.png"
@@ -33,7 +33,7 @@ class Sketch extends React.Component {
 
     p.draw = () => {
       windowResized();
-      p.background(190);
+      p.background(0);
       cursorDraw();
     };
   };
