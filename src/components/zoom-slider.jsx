@@ -22,9 +22,7 @@ class Sketch extends React.Component {
       img = p.loadImage(
         "https://michaelrodriguez23.github.io/brecklyn_portfolio/assets/FastService.jpeg"
       );
-      cursor = p.loadImage(
-        "https://michaelrodriguez23.github.io/brecklyn_portfolio/assets/100.png"
-      );
+      
     };
     function cursorDraw() {
       p.noCursor();
