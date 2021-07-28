@@ -33,7 +33,7 @@ class Sketch extends React.Component {
 
     p.draw = () => {
       windowResized();
-      p.background(0);
+      p.background(1);
       cursorDraw();
     };
   };
