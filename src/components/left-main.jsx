@@ -39,10 +39,15 @@ const LeftMain = () => {
       isOver: false,
     },
     {
+      type: "instagram",
+      hyperLink: "https://www.instagram.com/michael.elijah.cloud.content/",
+      isOver: false,
+    },
+    {
       type: "are.na",
       hyperLink: "https://www.are.na/miguelito/high-tech-low-life-adda3vjovvi",
       isOver: false,
-    },
+    }
   ]);
 
   const [showLink, setShowLink] = React.useState(true);
@@ -136,6 +141,7 @@ const LeftMain = () => {
           {/* <Sketch></Sketch> Lets try applying media query for the right component to load here instead of right side */}
 
           <Lead></Lead>
+          <Sketch></Sketch>
         </Sidebar>
       </Wrapper>
     </Container>
@@ -159,7 +165,7 @@ box-sizing: border-box;
 margin:0;
 `;
 
-const Lead = Styled.h1`
+const Lead = Styled.h2`
 margin:0;
 font-size:1.5em;
 padding-top:2%;
@@ -176,7 +182,7 @@ text-align: center;
 color:white;
 `;
 const Brief = Styled.p`
-font-size:1em;
+font-size:.5em;
 padding: .5em;
 text-align:center;
 color:white;

@@ -54,7 +54,7 @@ color:white;
 padding:1em;
 background: black;
 font-size:.4em;
-padding:2em;
+padding:1em;
 height:50vh;
 width:90vw;
 margin:0;

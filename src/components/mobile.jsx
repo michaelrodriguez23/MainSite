@@ -39,10 +39,15 @@ const Mobile = () => {
       isOver: false,
     },
     {
+      type: "instagram",
+      hyperLink: "https://www.instagram.com/michael.elijah.cloud.content/",
+      isOver: false,
+    },
+    {
       type: "are.na",
       hyperLink: "https://www.are.na/miguelito/high-tech-low-life-adda3vjovvi",
       isOver: false,
-    },
+    }
   ]);
 
   const [showLink, setShowLink] = React.useState(true);
