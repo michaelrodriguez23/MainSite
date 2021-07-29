@@ -32,7 +32,7 @@ class Sketch extends React.Component {
     function cursorDraw() {
       p.noCursor();
       p.imageMode(p.CORNERS);
-      p.tint(p.mouseY,p.mouseY,p.MouseX)
+      p.tint(p.mouseY,p.mouseY,p.MouseY)
       
       if(p.mouseX < p.windowWidth/6){
         p.image(hunnid, p.mouseX, p.mouseY, 300, 300);
