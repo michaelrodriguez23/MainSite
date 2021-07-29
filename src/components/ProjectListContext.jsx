@@ -9,9 +9,9 @@ export const ProjectProvider = (props) => {
       title: "Getting Situated In Augmented Reality",
       date: "[2021]",
       brief:
-        "4 Augmented Reality Applications that was coarsed with the teachings of Zach Lieberman and Edgardo Aviles-Lopez of School of Poetic Computation.",
+        "Here are 4 Augmented Reality Applications that was coarsed with the teachings of Zach Lieberman and Edgardo Aviles-Lopez of School of Poetic Computation.",
       description:
-      "We looked at augmented reality as an artistic discipline, and technological practice with computer vision, human interaction, and graphics. Using Spark AR programming patches and scripts to traverse through unknown territories of mixed reality. Primarily through face tracking,world tracking, and target tracking. These projects produced discussions around ethics,practice, and technicality of AR. ",
+      "We looked at augmented reality as an artistic discipline, and technological practice with computer vision, human interaction, and graphics. Using Spark AR programming patches and javascript reactive asyncronous scriptsing to traverse through unknown territories of mixed reality. Primarily through face tracking,world tracking, and target tracking. These projects produced discussions around ethics,practice, and technicality of AR. ",
       image: "",
       details:
         "https://github.com/michaelrodriguez23/SFPC_Projects",
