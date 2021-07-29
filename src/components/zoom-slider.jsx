@@ -22,17 +22,17 @@ class Sketch extends React.Component {
     p.setup = () => {
       canvas = p.createCanvas(p.windowWidth / 2.59, p.windowHeight / 1.58);
       selfie = p.loadImage(
-        "https://i.ibb.co/qBSQGyR/selfie.jpg"
+        "https://i.ibb.co/DpKMLkS/dither-it-IMG-2715-2.png"
       );
       hunnid = p.loadImage(
-        "https://i.ibb.co/Wxt1G5P/100.png"
+        "https://i.ibb.co/DpKMLkS/dither-it-IMG-2715-2.png"
       );
        
     };
     function cursorDraw() {
       p.noCursor();
       p.imageMode(p.CORNERS);
-      p.tint(p.mouseY,p.mouseY,p.MouseX)
+
       if(p.mouseX < p.windowWidth/6){
         p.image(hunnid, p.mouseX, p.mouseY, 300, 300);
       } else {
