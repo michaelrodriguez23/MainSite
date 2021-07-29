@@ -12,6 +12,8 @@ class Sketch extends React.Component {
     let cursor;
     let angle = 0;
     let img;
+    let selfie;
+    let hunnid; 
 
     function preLoad() {}
     function windowResized() {
@@ -19,16 +21,24 @@ class Sketch extends React.Component {
     }
     p.setup = () => {
       canvas = p.createCanvas(p.windowWidth / 2.59, p.windowHeight / 1.58);
-      img = p.loadImage(
+      selfie = p.loadImage(
         "https://michaelrodriguez23.github.io/MainSite/assets/selfie.jpg"
       );
-      cursor = p.loadImage(
+      hunnid = p.loadImage(
         "https://michaelrodriguez23.github.io/MainSite/assets/100.png"
       );
+       
     };
     function cursorDraw() {
       p.noCursor();
-      p.image(cursor, p.mouseX, p.mouseY, 100, 100);
+      p.imageMode(p.CORNERS);
+      p.tint(p.mouseY,p.mouseY,p.MouseX)
+      
+      if(p.mouseX < p.windowWidth/6){
+        p.image(hunnid, p.mouseX, p.mouseY, 300, 300);
+      } else {
+        p.image(selfie, p.mouseX, p.mouseY, 300, 300);
+      }
     }
 
     p.draw = () => {
