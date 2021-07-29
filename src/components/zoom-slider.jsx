@@ -22,10 +22,10 @@ class Sketch extends React.Component {
     p.setup = () => {
       canvas = p.createCanvas(p.windowWidth / 2.59, p.windowHeight / 1.58);
       selfie = p.loadImage(
-        "https://michaelrodriguez23.github.io/MainSite/assets/selfie.jpg"
+        "https://i.ibb.co/qBSQGyR/selfie.jpg"
       );
       hunnid = p.loadImage(
-        "https://michaelrodriguez23.github.io/MainSite/assets/100.png"
+        "https://i.ibb.co/Wxt1G5P/100.png"
       );
        
     };
