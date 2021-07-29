@@ -76,6 +76,7 @@ color:white ;
 .react-player {
   position: absolute;
 top:0;
+
 bottom:0;
 padding-bottom: 1em;
 };
