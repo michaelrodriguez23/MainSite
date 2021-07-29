@@ -13,7 +13,7 @@ export const InformationProvider = (props) => {
       description: "",
       details: "",
       image: "",
-      video: "",
+      video: ""
     },
   ]);
 

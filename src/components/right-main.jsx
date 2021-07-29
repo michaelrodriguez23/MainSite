@@ -25,13 +25,18 @@ const RightMain = () => {
             {currentInfo.image ? (
               <img src={process.env.PUBLIC_URL + currentInfo.image} />
             ) : null}
-
+            {currentInfo.video ? (
+              <ReactPlayer  url={currentInfo.video} > </ReactPlayer>
+              
+            ) : null}
+            
             <Credit>
               <a href={currentInfo.details}>{currentInfo.details} </a>
             </Credit>
             <Lead>
               <p>{currentInfo.description}</p>
             </Lead>
+          
           </>
         ))}
       </DisplayData>
@@ -43,7 +48,7 @@ export default RightMain;
 
 const DisplayData = Styled.div`
 text-align: center;
-padding:1em;
+
 background: black;
 font-size:1em;
 height:101vh;
@@ -51,11 +56,11 @@ margin:0;
 color:white;
 @media (max-width: 768px) { 
   text-align: center;
-padding:1em;
+
 background: black;
 font-size:.4em;
 padding:1em;
-height:50vh;
+height:20vh;
 width:90vw;
 margin:0;
 color:white;
@@ -65,24 +70,21 @@ color:white;
 const Lead = Styled.h1`
 text-align: center;
 margin:0;
-font-size:1.5em;
-padding-top:1em;
+font-size:1em;
 background-color:black;
 color:white;
 `;
 const Brief = Styled.p`
-
-padding-top:.5em;
 text-align: center;
 margin:0;
-font-size:1.3em !important;
+font-size:1.3em ;
 background-color:black;
 color:white;
 `;
 const Credit = Styled.a`
 text-align: right;
 font-size:1em;
-padding:0em;
+
 background-color:black;
 color:white;
 `;
