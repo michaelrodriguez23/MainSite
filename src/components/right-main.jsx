@@ -92,7 +92,6 @@ color:white;
 
 `;
 const Credit = Styled.a`
-
 text-align: right;
 font-size:1em;
 background-color:black;
