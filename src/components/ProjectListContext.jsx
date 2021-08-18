@@ -57,29 +57,29 @@ export const ProjectProvider = (props) => {
       video: "https://www.youtube.com/watch?v=JCc8ON00J5c",
       isOver: false,
     },
-    {
-      title: "Herd You ",
-      date: "[2018]",
-      brief:
-        " Music Video shot on 16mm Onyx collective featuring Sporting Life ", 
-      description:
-      " The objective of this project was to create a video without post production. Every shot had to be thought in advance to perform a One Take, No Cuts video. ",
-      image: "",
-      details:
-        "/assets/images/herdyou_flyer.jpg",
-      video: "",
-      isOver: false,
-    },
+    // {
+    //   title: "Herd You ",
+    //   date: "[2018]",
+    //   brief:
+    //     "A short film captivating the experience of the inner-city youth and their experience with the ever changing landscape of the city.", 
+    //   description:
+    //   "The video was released through Corpus.tv",
+    //   image: "/assets/images/herdyou_flyer.png",
+    //   details:
+    //     "",
+    //   video: "https://www.youtube.com/watch?v=aVbolGduF_o",
+    //   isOver: false,
+    // },
     {
       title: "Tom Dick and Harry",
       date: "[2017]",
       brief:
-        " Music Video shot on 16mm Onyx collective featuring Sporting Life ", 
+        " A street photography book capturing many of the amazing personalitiesin new york. ", 
       description:
-      " The objective of this project was to create a video without post production. Every shot had to be thought in advance to perform a One Take, No Cuts video. ",
-      image: "",
+      " Tom Dick, and Harry is a photography book that composed of 30 pages of unique characters, and moments . Laid out in a way to create comparisons between images, people, and moments in time.  ",
+      image: "/assets/images/TDH4.png",
       details:
-        "/assets/images/TDH4.png",
+        "",
       video: "",
       isOver: false,
     },
@@ -87,12 +87,12 @@ export const ProjectProvider = (props) => {
       title: "Varsity Jacket",
       date: "[2016]",
       brief:
-        " Music Video shot on 16mm Onyx collective featuring Sporting Life ", 
+        "Collaged and hand stitch jacket with many revolutionary public figures imprinted all over", 
       description:
-      " The objective of this project was to create a video without post production. Every shot had to be thought in advance to perform a One Take, No Cuts video. ",
-      image: "",
+      " ",
+      image: "/assets/images/varsity-front.png",
       details:
-        "/assets/images/varsity-front.jpg",
+        "",
       video: "",
       isOver: false,
     }
