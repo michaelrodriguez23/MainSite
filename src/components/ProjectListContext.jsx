@@ -74,7 +74,7 @@ export const ProjectProvider = (props) => {
       title: "Tom Dick and Harry",
       date: "[2017]",
       brief:
-        " A street photography book capturing many of the amazing personalitiesin new york. ", 
+        " A street photography book capturing many of the unique personalities in new york. ", 
       description:
       " Tom Dick, and Harry is a photography book that composed of 30 pages of unique characters, and moments . Laid out in a way to create comparisons between images, people, and moments in time.  ",
       image: "/assets/images/TDH4.png",
