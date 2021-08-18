@@ -148,7 +148,7 @@ const LeftMain = () => {
   );
 };
 // Variables
-const brief = "NYC  [vejigante@protonmail.com]";
+const brief = "\n Is a NYC based new media artist, and web developer. He enjoys creating multiverses through augmentation of media, through code.";
 
 const Wrapper = Styled.div`
 background-color:black;

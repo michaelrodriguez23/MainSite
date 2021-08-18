@@ -30,6 +30,71 @@ export const ProjectProvider = (props) => {
         "https://michaelrodriguez23.github.io/WhatIsNews/",
       video: "",
       isOver: false,
+    },
+    {
+      title: "Sipping on BackWash",
+      date: "[2019]",
+      brief:
+        " An experimental film that is poetic response to the political landscape of Puerto Rico after the #RickyRenuncia movement.  ", 
+      description:
+      "Engage into the world of my visually cluttered mind, and explore the artifacts left behind through a documentarian form that translates political frustration into superimposed memories, and soundscaped mixed realities.",
+      image: "",
+      details:
+        "",
+      video: "https://www.youtube.com/watch?v=Wqpw4kSRUos",
+      isOver: false,
+    },
+    {
+      title: "Space Wars ",
+      date: "[2018]",
+      brief:
+        " Music Video shot on 16mm Onyx collective featuring Sporting Life ", 
+      description:
+      " The objective of this project was to create a video without post production. Every shot had to be thought in advance to perform a One Take, No Cuts video. ",
+      image: "",
+      details:
+        "",
+      video: "https://www.youtube.com/watch?v=JCc8ON00J5c",
+      isOver: false,
+    },
+    {
+      title: "Herd You ",
+      date: "[2018]",
+      brief:
+        " Music Video shot on 16mm Onyx collective featuring Sporting Life ", 
+      description:
+      " The objective of this project was to create a video without post production. Every shot had to be thought in advance to perform a One Take, No Cuts video. ",
+      image: "",
+      details:
+        "/assets/images/herdyou_flyer.jpg",
+      video: "",
+      isOver: false,
+    },
+    {
+      title: "Tom Dick and Harry",
+      date: "[2017]",
+      brief:
+        " Music Video shot on 16mm Onyx collective featuring Sporting Life ", 
+      description:
+      " The objective of this project was to create a video without post production. Every shot had to be thought in advance to perform a One Take, No Cuts video. ",
+      image: "",
+      details:
+        "/assets/images/TDH4.png",
+      video: "",
+      isOver: false,
+    },
+    {
+      title: "Varsity Jacket",
+      date: "[2016]",
+      brief:
+        " Music Video shot on 16mm Onyx collective featuring Sporting Life ", 
+      description:
+      " The objective of this project was to create a video without post production. Every shot had to be thought in advance to perform a One Take, No Cuts video. ",
+      image: "",
+      details:
+        "/assets/images/varsity-front.jpg",
+      video: "",
+      isOver: false,
     }
   
 
